@@ -71,6 +71,7 @@ public class ParkSquareHomesSteps {
 		System.out.println(srtitle);
 		Assert.assertEquals("Manage Service Requests | Park Square Homes", srtitle);
 		System.out.println("Manage Service Request Page Executed");
+		System.out.println("Comment added By Gitstuff Manage Service Request");
 	}
 
 	@Given("user click on main Accounting module")
@@ -101,6 +102,7 @@ public class ParkSquareHomesSteps {
 		System.out.println(bpratitle);
 		Assert.assertEquals("BPRA Calculation | Park Square Homes", bpratitle);
 		System.out.println("BPRA Calculations Page Executed");
+		System.out.println("Comment added By Gitstuff BPRA Calculations");
 	}
 
 	@Then("user close the browser")
