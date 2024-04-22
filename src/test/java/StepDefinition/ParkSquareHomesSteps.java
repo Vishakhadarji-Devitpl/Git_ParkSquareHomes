@@ -51,6 +51,7 @@ public class ParkSquareHomesSteps {
 		System.out.println(title);
 		Assert.assertEquals("Landing Page Dashboard | Park Square Homes", title);
 		Thread.sleep(2000);
+		System.out.println("Verifying with the new develop branch");
 	}
 
 	@Given("user click on main Warranty module")
@@ -100,9 +101,10 @@ public class ParkSquareHomesSteps {
 	public void validate_user_is_on_bpra_calculation_page() {
 		String bpratitle = driver.getTitle();
 		System.out.println(bpratitle);
-		Assert.assertEquals("BPRA Calculation | Park Square Homes", bpratitle);
+		Assert.assertEquals("BPRA Calculation | Park Square Homes1", bpratitle);
 		System.out.println("BPRA Calculations Page Executed");
 		System.out.println("Comment added By Gitstuff BPRA Calculations");
+		System.out.println("Verifying with the new develop branch");
 	}
 
 	@Then("user close the browser")
