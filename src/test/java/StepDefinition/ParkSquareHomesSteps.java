@@ -110,6 +110,7 @@ public class ParkSquareHomesSteps {
 	@Then("user close the browser")
 	public void user_close_the_browser() {
 		driver.quit();
+		System.out.println("Gitstuff added this code");
 	}
 	
 	@AfterStep
