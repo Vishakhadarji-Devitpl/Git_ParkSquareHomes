@@ -21,13 +21,4 @@ pipeline {
             }
         }
     }
-	
-	post{
-		success{
-			echo "Pipeline completed successfully"
-			}
-		failur{
-			echo "Pipeline failed"
-			}
-		}
 }
