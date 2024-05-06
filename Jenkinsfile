@@ -2,23 +2,35 @@ pipeline {
     agent any
 
     stages {
-       
-        stage('BUILD') {
-            steps {
-               echo "Creating build for ${params.ENVIRONMENT} on ${params.PLATFORM} platform"
+        stage('Build') 
+        {
+            steps 
+            {
+                echo 'Build App'
+            }
+        }
+        stage('Test') 
+        {
+            steps 
+            {
+                echo 'Test App'
+            }
+        }
+        stage('Deploy') 
+        {
+            steps 
+            {
+                echo 'Deploy App'
             }
         }
 
-        stage('RUN AUTOMATION') {
-            steps {
-                echo "Running Automation on ${params.BROWSER} browser"
-            }
-        }
+    }
 
-        stage('DEPLOY') {
-            steps {
-                echo "Deploying on ${params.ENVIRONMENT} server"
-            }
+    post
+    {
+        always
+        {
+            emailext body: 'Summary', subject: 'Pipeline Status', to: 'vishakhadarjidevitpl@gmail.com'
         }
     }
 }
