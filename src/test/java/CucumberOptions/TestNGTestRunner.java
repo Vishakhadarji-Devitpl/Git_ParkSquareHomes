@@ -8,7 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 			glue = "StepDefinition",
 			monochrome = true,
 			tags = "@ManageServiceRequest or @BPRACalculation",
-			plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed_Scenario.txt"}
+			plugin = {"pretty","html:target/CucumberTestNG.html", "json:target/cucumber/CucumberTestNG.json",
+				  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","rerun:target/failed_Scenario.txt"}
 		)
 public class TestNGTestRunner extends AbstractTestNGCucumberTests{
 
